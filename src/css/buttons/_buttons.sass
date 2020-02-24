@@ -1,0 +1,23 @@
+.site-btn
+	font-size: 16px
+	color: #fff
+	font-weight: 400
+	padding: 10px 
+	border: 1px solid $primary-color
+	border-radius: 5px
+	display: table
+	transition: all .3s ease-in-out
+	&._wider
+		padding: 10px 40px
+
+	&:hover 
+		background: $primary-color
+		color: #fff
+		border-color: darken($primary-color, 30%)
+		box-shadow: 1px 3px 10px rgba($primary-color, .3)
+
+.site-btn._reverse
+	background: $primary-color
+	
+	&:hover 
+		border-color: $primary-color

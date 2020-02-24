@@ -1,0 +1,211 @@
+@import 'components/fixedThumb'
+@import 'buttons/buttons'
+
+.x-close 
+	width: 20px
+	height: 20px
+	cursor: pointer
+	position: relative
+	&:before, &:after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 100%
+		height: 1px
+		background: red
+		transform: translate(-50%, -50%) rotate(-45deg)
+	&:after
+		transform: translate(-50%, -50%) rotate(45deg)
+
+.video-modal 
+	.x-close
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 2
+.title__
+	h3 
+		font-size: 40px 
+		font-weight: 600
+		color: #fff
+		margin-bottom: 0
+	h6 
+		font-size: 16px
+		color: $primary-color
+		font-weight: 200
+	&._uppercase
+		h3 
+			text-transform: uppercase
+	&._big 
+		h3 
+			font-size: 69px
+		h6 
+			font-size: 27.59px
+	&._small
+		h3 
+			font-size: 30px
+
+	@media (max-width: 991.82px)
+		&._big 
+			h3
+				font-size: 55px
+	@media (max-width: 767.82px)
+		h3 
+			font-size: 35px
+		&._big 
+			h3 
+				font-size: 45px
+		&._small
+			h3 
+				font-size: 25px
+
+	@media (max-width: 575.82px)
+		h6 
+			font-size: 14px
+		h3 
+			font-size: 28px
+		&._small
+			h3 
+				font-size: 20px
+
+		&._big 
+			h6 
+				font-size: 18px
+			h3 
+				font-size: 30px
+		
+.swiper-pagination-1
+	display: flex
+	.swiper-pagination-bullet
+		background: $primary-color
+
+.bg-particle
+	position: fixed 
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.scroll-parallax-container
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	.object 
+		position: absolute
+	+ * 
+		position: relative
+
+
+.title__2
+	h6 
+		font-size: 32.55px
+		color: $primary-color-2
+		font-weight: normal
+		text-shadow: 0px 3px 3px rgba(#000d20, .55)
+		margin-bottom: 20px
+	h3 
+		font-size: 58.59px
+		font-weight: bold
+		color: #fff
+		text-shadow: 0px 5px 3px rgba(#000d20, .55)
+		line-height: 1.1
+		margin-bottom: 0
+	@media (max-width: 767.82px)
+		h3
+			font-size: 45px
+		h6 
+			font-size: 27px
+	@media (max-width: 575.82px)
+		h3
+			font-size: 30px
+		h6 
+			font-size: 17px
+
+.title__3
+	h3 
+		font-size: 48.83px
+		font-weight: 600
+		color: $primary-color-2
+		line-height: 1.1
+		margin-bottom: 0
+	h6 
+		font-size: 21.7px
+		color: #fff
+		font-weight: 400
+		margin-top: 10px
+		margin-bottom: 0
+
+	@media (max-width: 575.82px)
+		h3
+			font-size: 30px
+
+.site-btn2 
+	position: relative
+	display: table
+	border: none
+	border-top: 1px solid $primary-color-2
+	border-left: 1px solid $primary-color-2
+	overflow: hidden
+	font-size: 22.79px
+	color: $primary-color-2
+	padding: 10px 30px
+	transition: all .3s ease
+	background: none
+	&._center
+		text-align: center
+	.btn-bg
+		background: rgba(#000, .88)
+		height: 200%
+		position: absolute
+		width: 150%
+		right: 22px
+		bottom: 0
+		transform: skewX(-45deg)
+		transform-origin: bottom right
+		transition: all .3s ease
+	.line-b 
+		position: absolute
+		left: 0
+		bottom: 0
+		height: 1px
+		width: calc(100% - 22px)
+		background: $primary-color-2
+	.line-r
+		position: absolute
+		right: 0
+		top: 0
+		height: calc(100% - 22px)
+		width: 1px
+		background: $primary-color-2
+	.line-c
+		position: absolute
+		right: 22px
+		bottom: 0
+		height: 100px
+		width: 1px
+		background: $primary-color-2
+		transform: rotate(45deg)
+		transform-origin: bottom left
+	span 
+		position: relative
+
+	&:hover
+		color: #fff
+		.btn-bg 
+			background: $primary-color-2
+
+
+
+.form-control._2
+	border: 1px solid $primary-color-2
+	border-radius: 0
+	background: rgba(black, .5)
+	height: 60px
+	color: $primary-color-2
+
+
+
+
