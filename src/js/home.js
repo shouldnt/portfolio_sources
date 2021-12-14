@@ -1,5 +1,7 @@
 import lerp from './lerp.js'
-
+function  testHoangUniqueFunctionHoang() {
+	console.log('testHoangUniqueFunctionHoang');
+}
 
 function ThreeScroll() {
 	this.init();
