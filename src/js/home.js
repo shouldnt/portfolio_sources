@@ -1,4 +1,5 @@
 import lerp from './lerp.js'
+// commment test Hoang Unique Function Hoang
 function  testHoangUniqueFunctionHoang() {
 	console.log('testHoangUniqueFunctionHoang');
 }
